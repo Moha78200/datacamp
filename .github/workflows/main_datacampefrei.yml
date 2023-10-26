@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'datacampefrei'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_19C5F7D4C47C48B880F5397972B177D8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EDE63DEB8715466FB7B6A4631270B403 }}
