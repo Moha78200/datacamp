@@ -5,11 +5,13 @@ import numpy as np
 import io
 import pandas as pd
 from PIL import Image
-# Function to load the pre-trained model
+# Function to load the trained model
+@st.cache_data(with_spinner = "Loading model...")
 def load_model():
     return tf.keras.models.load_model('model1.hdf5')
 
 # Function to make predictions
+@st.cache_data(with_spinner = "Making predictions...")
 def make_predictions(model, uploaded_file):
     try:
         # Read the uploaded file as bytes
@@ -36,6 +38,7 @@ def make_predictions(model, uploaded_file):
         return None
 
 # Streamlit UI elements and logic
+@st.cache_data(with_spinner = "Loading app...")
 def main():
     with st.container():
         st.title("Retinal Disease Classification")
