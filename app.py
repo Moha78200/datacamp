@@ -126,7 +126,6 @@ def main():
                 for label, prediction in zip(class_labels, binary_predictions):
                     df.loc[len(df)] = [label, prediction]
 
-                st.table(df)
                 # Boucle sur les lignes pour personnaliser
                 for index, row in df.iterrows():
                     if row['Result'] == 1:
@@ -141,6 +140,8 @@ def main():
 
                     st.markdown(f"If you're not sure what to do, don't hesitate to go to this {link} and follow the recommended protocol.",
                                 unsafe_allow_html=True)
+                    
+                st.table(df)
 
     st.markdown("""
     <style>
