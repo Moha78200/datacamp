@@ -38,7 +38,7 @@ def make_predictions(model, uploaded_file):
         return None
 
 # Streamlit UI elements and logic
-@st.cache_data(show_spinner = "Loading app...")
+@st.cache_data(experimental_allow_widgets=True)
 def main():
     with st.container():
         st.title("Retinal Disease Classification")
