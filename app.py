@@ -4,14 +4,12 @@ import cv2
 import numpy as np
 import io
 import pandas as pd
-from PIL import Image
 # Function to load the trained model
 @st.cache_data(show_spinner = "Loading model...")
 def load_model():
     return tf.keras.models.load_model('model1.hdf5')
 
 # Function to make predictions
-@st.cache_data(show_spinner = "Making predictions...")
 def make_predictions(model, uploaded_file):
     try:
         # Read the uploaded file as bytes
@@ -140,7 +138,7 @@ def main():
 
                     st.markdown(f"If you're not sure what to do, don't hesitate to go to this {link} and follow the recommended protocol.",
                                 unsafe_allow_html=True)
-                    
+                st.write("Full analysis results :")
                 st.table(df)
 
     st.markdown("""
