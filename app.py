@@ -12,7 +12,7 @@ def load_model():
 def make_predictions(model, uploaded_file):
     try:
         # Read the uploaded file as bytes
-@@ -36,6 +38,7 @@ def make_predictions(model, uploaded_file):
+        def make_predictions(model, uploaded_file):
         return None
 
 # Streamlit UI elements and logic
