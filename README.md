@@ -22,6 +22,8 @@ Finally, please copy paste this link, that will bring you to the webpage
 # Link to our web site 
 https://datacampefrei.azurewebsites.net/
 
+https://datacampefrei.streamlit.app/
+
 If you want to explore our database here is our sharepoint from M.Hammoud
 
 # Link to our database
